@@ -1,4 +1,4 @@
-import Board, { createBoardFromArray } from "./Board";
+import Board, { createBoardFromArray } from "./board";
 
 const T = createBoardFromArray(
     [[0,0,0], 

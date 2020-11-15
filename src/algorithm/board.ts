@@ -59,11 +59,11 @@ class Board {
                     continue;
                 }
                 if (this.get(y+i, x+j) != 0) {
-                    return false;
+                    return true;
                 }
             }
         }
-        return true;
+        return false;
     }
 
     fillAt(y: number, x: number, value: Board, ignoreZero: boolean = true, inv: boolean = false) {

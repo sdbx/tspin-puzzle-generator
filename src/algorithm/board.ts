@@ -151,7 +151,7 @@ class Board {
         }
         for (let i = 0; i < this.h; i ++) {
             for (let j = 0; j < this.w; j++) {
-                newboard[j][this.h-i] = this.board[i][j];
+                newboard[j][this.h-i-1] = this.board[i][j];
             }
         }
         const tmp = this.w;

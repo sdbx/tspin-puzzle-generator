@@ -1,4 +1,4 @@
-import { createBoardFromArray } from "./algorithm/Board";
+import { createBoardFromArray } from "./algorithm/board";
 import { reverse } from "./algorithm/algorithm";
 
 const bb = createBoardFromArray(

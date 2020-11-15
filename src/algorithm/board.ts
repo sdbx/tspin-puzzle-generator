@@ -1,5 +1,7 @@
+type BoardType = number[][];
+
 class Board {
-    board: number[][];
+    board: BoardType;
     h: number;
     w: number;
     constructor(h: number, w: number){
@@ -142,7 +144,7 @@ class Board {
     cw() {
         // (x,y) -> (h-y,x)
         // (j,i) -> (h-i,j)
-        const newboard = [];
+        const newboard: BoardType = [];
         for (let i = 0; i < this.w; i ++) {
             newboard[i] = [];
             for (let j = 0; j < this.h; j++) {
@@ -163,7 +165,7 @@ class Board {
     ccw() {
         // (x,y) -> (y,w-x)
         // (j,i) -> (i,w-j)
-        const newboard = [];
+        const newboard: BoardType = [];
         for (let i = 0; i < this.w; i ++) {
             newboard[i] = [];
             for (let j = 0; j < this.h; j++) {
@@ -243,7 +245,7 @@ class Board {
     }
 }
 
-export function createBoardFromArray(arr: number[][]) {
+export function createBoardFromArray(arr: BoardType) {
     const h = arr.length;
     const w = arr[0].length;
     const output = new Board(h, w);
